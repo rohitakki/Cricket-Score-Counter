@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff1"
+    android:orientation="vertical"
+    android:scaleType="centerCrop">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teamAName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eceff1"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:text="Team A" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eceff1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team_a_scoreA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="40sp"
+                        tools:text="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/slash"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/wicketA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="40sp"
+                        tools:text="0" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/overA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#eceff1"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    tools:text="Overs = 0.0" />
+
+                <Button
+                    android:id="@+id/sixRunA"
+                    style="@style/team_button"
+                    android:onClick="SixPointsA"
+                    android:text="@string/run6" />
+
+                <Button
+                    android:id="@+id/fourRunA"
+                    style="@style/team_button"
+                    android:onClick="fourPointsA"
+                    android:text="@string/run4" />
+
+                <Button
+                    android:id="@+id/twoRunA"
+                    style="@style/team_button"
+                    android:onClick="twoPointA"
+                    android:text="@string/run2" />
+
+                <Button
+                    android:id="@+id/oneRunA"
+                    style="@style/team_button"
+                    android:onClick="oneRunA"
+                    android:text="@string/run1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/wdA"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="oneRunAA"
+                        android:text="@string/wd"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/nbA"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="oneRunAA"
+                        android:text="@string/nb"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/dotA"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="dotA"
+                        android:text="@string/dot"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/wkA"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="wicketA"
+                        android:text="@string/wk"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="horizontal">
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/decOneRunA"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="decOneRunA"
+                        android:text="@string/run"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/decWicketA"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="decWicketA"
+                        android:text="@string/w_k"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/decBallA"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="decBallA"
+                        android:text="@string/ball"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:theme="@style/AppTheme.button">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="restoreA"
+                        android:text="@string/undo"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:onClick="redoA"
+                        android:text="@string/redo"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eceff1"
+    android:orientation="vertical"
+    android:scaleType="centerCrop"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/teamBName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eceff1"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:text="Team B" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#eceff1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/team_a_scoreb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="40sp"
+                        tools:text="0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/slash"
+                        android:textSize="40sp" />
+
+                    <TextView
+
+                        android:id="@+id/wicketB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="40sp"
+                        tools:text="0" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/overB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:background="#eceff1"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="25sp"
+                    tools:text="Overs = 0.0" />
+
+                <Button
+                    android:id="@+id/sixRunB"
+                    style="@style/team_button"
+                    android:onClick="SixPointsB"
+                    android:text="@string/run6" />
+
+                <Button
+                    android:id="@+id/fourRunB"
+                    style="@style/team_button"
+                    android:onClick="fourPointsB"
+                    android:text="@string/run4" />
+
+                <Button
+                    android:id="@+id/twoRunB"
+                    style="@style/team_button"
+                    android:onClick="twoPointB"
+                    android:text="@string/run2" />
+
+                <Button
+                    android:id="@+id/oneRunB"
+                    style="@style/team_button"
+                    android:onClick="oneRunB"
+                    android:text="@string/run1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/wdB"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="oneRunBB"
+                        android:text="@string/wd"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/nbB"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="oneRunBB"
+                        android:text="@string/nb"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/dotB"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="dotB"
+                        android:text="@string/dot"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/wkB"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:onClick="wicketB"
+                        android:text="@string/wk"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:orientation="horizontal">
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/decOneRunB"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="decOneRunB"
+                        android:text="@string/run"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/decWicketB"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="decWicketB"
+                        android:text="@string/w_k"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+
+                    <com.cuboid.cuboidcirclebutton.CuboidButton
+                        android:id="@+id/decBallB"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:onClick="decBallB"
+                        android:text="@string/ball"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:theme="@style/AppTheme.button">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="restoreB"
+                        android:text="@string/undo"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:onClick="redoB"
+                        android:text="@string/redo"
+                        android:textColor="#000"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

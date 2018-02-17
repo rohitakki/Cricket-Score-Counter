@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Cricket Score Counter</string>
+    <string name="Enter">Enter name</string>
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="Toss">TOSS</string>
+    <string name="Start">START</string>
+    <string name="Result">RESULT</string>
+    <string name="Reset">RESET</string>
+    <string name="Save">SAVE</string>
+    <string name="View">View</string>
+    <string name="Delete">delete</string>
+    <string name="slash">/</string>
+    <string name="run6">+6 RUNS</string>
+    <string name="run4">+4 RUNS</string>
+    <string name="run2">+2 RUNS</string>
+    <string name="run1">+1 RUNS</string>
+    <string name="wd">Wd</string>
+    <string name="nb">Nb</string>
+    <string name="dot">Dot</string>
+    <string name="wk">Wk</string>
+    <string name="run">-RUN</string>
+    <string name="w_k">-Wk</string>
+    <string name="ball">-BALL</string>
+    <string name="undo">undo</string>
+    <string name="redo">redo</string>
+
+</resources>
